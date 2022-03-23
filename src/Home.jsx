@@ -38,21 +38,29 @@ const Home = () => {
                 src="1.mp3"
                 // other props here
                 loop
+                showJumpControls={false}
+                showDownloadProgress={false}
               />
               <AudioPlayer
                 src="2.mp3"
                 // other props here
                 loop
+                showJumpControls={false}
+                showDownloadProgress={false}
               />
               <AudioPlayer
                 src="3.mp3"
                 // other props here
                 loop
+                showJumpControls={false}
+                showDownloadProgress={false}
               />
               <AudioPlayer
                 src="4.mp3"
                 // other props here
                 loop
+                showJumpControls={false}
+                showDownloadProgress={false}
               />
             </PlayerContainer>
           </AmbienceContainer>
@@ -103,12 +111,15 @@ const Container = styled.div`
   }
   .rhap_progress-filled,
   .rhap_progress-indicator,
+  .rhap_progress-bar,
   .rhap_volume-bar,
   .rhap_volume-indicator {
     background-color: #000;
+    box-shadow: none;
   }
   .rhap_download-progress {
-    background: rgba(8, 8, 8, 0.35);
+    /* background: rgba(8, 8, 8, 0.35); */
+    background: #000;
   }
 `;
 const Left = styled.div`
