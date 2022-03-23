@@ -7,7 +7,9 @@ import "react-h5-audio-player/lib/styles.css";
 const Home = () => {
   const [bg, setBg] = React.useState("1.gif");
   const [spotifyUrl, setSpotifyUrl] = React.useState("");
-  const [playlist, setPlaylist] = React.useState();
+  const [playlist, setPlaylist] = React.useState(
+    "https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF?si=bc07093431734df6"
+  );
   useEffect(() => {
     const interval = setInterval(() => {
       const temp = sample(bgList);
@@ -71,7 +73,10 @@ const Home = () => {
         </Right>
       </Content>
       <Footer>
-        <input onChange={(e) => setSpotifyUrl(e.target.value)} />
+        <input
+          onChange={(e) => setSpotifyUrl(e.target.value)}
+          placeholder="Enter Playlist URL"
+        />
         <Button onClick={() => handleUrl()}>Change Playlist</Button>
       </Footer>
     </Container>
@@ -92,6 +97,18 @@ const Container = styled.div`
   }
   .rhap_time {
     color: black;
+  }
+  .rhap_button-clear {
+    color: #000;
+  }
+  .rhap_progress-filled,
+  .rhap_progress-indicator,
+  .rhap_volume-bar,
+  .rhap_volume-indicator {
+    background-color: #000;
+  }
+  .rhap_download-progress {
+    background: rgba(8, 8, 8, 0.35);
   }
 `;
 const Left = styled.div`
