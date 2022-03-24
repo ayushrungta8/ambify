@@ -124,7 +124,7 @@ const Container = styled.div`
 `;
 const Left = styled.div`
   width: 48%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   align-items: center;
   justify-content: end;
@@ -138,12 +138,13 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   width: 48%;
-  height: 100%;
+  /* height: 100%; */
   justify-content: start;
 `;
 const AmbienceContainer = styled.div`
   width: 486px;
-  height: 650px;
+  /* height: 650px; */
+  height: 85%;
   overflow: hidden;
   /* padding: 10px; */
   background: linear-gradient(
@@ -171,18 +172,19 @@ const PlayerContainer = styled.div`
   justify-content: space-evenly;
 `;
 const Header = styled.div`
-  padding: 40px 0;
+  padding: 20px 0;
+  height: 15%;
   display: flex;
   justify-content: center;
 `;
 const Footer = styled.div`
-  /* padding: 2px 0; */
-  height: 150px;
+  padding: 15px 0;
+  height: 15%;
   align-self: center;
   background-color: #0d0d0e;
   width: 28%;
   border-radius: 16px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,6 +204,7 @@ const Footer = styled.div`
 const Content = styled.div`
   display: flex;
   justify-content: space-between;
+  height: 70%;
 `;
 const Button = styled.button`
   border: none;
